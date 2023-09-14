@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1>Hitung Keliling dan Luas Persegi</h1>
+
+    <section>
+      <h2 id="keliling">Hitung Keliling Persegi</h2>
+      <div class="konten keliling">
+        <div>
+          <label for="input-keliling">Masukkan Panjang Sisi</label>
+          <input type="number" id="input-keliling" />
+          <button type="button" id="hitung-keliling">Hitung</button>
+        </div>
+        <div class="result-keliling hidden">
+          <p>K = 4 x S</p>
+          <p>K = 4 x <span id="sisi-keliling"></span></p>
+          <p>K = <span id="result-keliling"></span></p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 id="luas">Hitung Luas Persegi</h2>
+      <div class="konten luas">
+        <div>
+          <label for="input-luas">Masukkan Panjang Sisi</label>
+          <input type="number" id="input-luas" />
+          <button type="button" id="hitung-luas">Hitung</button>
+        </div>
+        <div class="result-luas hidden">
+          <p>L = S x S</p>
+          <p>L = <span id="sisi-luas"></span></p>
+          <p>L = <span id="result-luas"></span></p>
+        </div>
+      </div>
+    </section>
+
+    <script type="module" src="js/script.js"></script>
+  </body>
+</html>
